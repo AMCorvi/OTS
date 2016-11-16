@@ -1,0 +1,41 @@
+//Imports
+@import './variables/_variables.sass'
+
+// Component Styles
+main 
+    display: flex
+    @media (max-width: 800px)     
+        display: flexbox
+        flex-direction: column
+        align-items:  center
+
+    .mapContainer
+        height: 100vh
+        flex-grow: 2
+
+        @media (max-width: 800px)  
+            width: 100vw
+            height: 100vh
+            max-height: 55vh
+
+    .placesComponent
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        width: calc(100% * .45)
+        border-left: 3px $accent-prime solid
+        background-color: $base-light
+        overflow: scroll
+        max-height: 100vh
+
+        @media (max-width: 800px)  
+            width: 100vw
+            border-top: 3px $accent-prime solid
+            border-left: 2px $accent-prime solid
+            background-color: $base-light
+
+
+
+
+
+        

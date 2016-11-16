@@ -6,19 +6,33 @@ module.exports = {
         app: "./src/app.js"
     },
     output: {
-        filename: "./build/bundle.js",
+        path: 'build',
+        filename: "bundle.js",
         sourceMapFilename: "./build/bundle.js.map"
+    },
+    devServer: {
+        inline: true,
+        contentBase: './build',
+        port: 3005
     },
     devtool: '#source-map',
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
-                exclude: /(node_modules|bower_component)/ ,  
-                loader: 'babel',
-                query: {
-                    presets: ['react', 'es2015']
+            test: /\.js?$/,
+            exclude: /(node_modules|bower_component)/ ,  
+            loader: 'babel',
+            query: {
+                presets: ['react', 'es2015']
                 }
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=20000'
+            },
+            {
+                test: /\.sass$/,
+                loader: 'style-loader!css-loader!sass-loader'
             }
         ]
     }
