@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 // Components
-import Locale from './locale'
+import Locale from './locales'
 
 //Styles
 import './styles/places.sass'

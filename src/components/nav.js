@@ -1,6 +1,11 @@
 import React, {Component} from 'react'
 
+
+//Component styles
 import './styles/nav.sass'
+
+//images
+import logo from './styles/images/photo-1430213670473-21aeffa76133.png'
 
 export default class Nav extends Component {
 
@@ -14,16 +19,22 @@ export default class Nav extends Component {
                     <header className="mdl-layout__header">
                         <div className="mdl-layout__header-row">
 
-                            <span className="mdl-layout-title">On・The・Scene</span>
+                            <span className="mdl-layout-title">
+                                <a href=""> <img src={logo} alt="On・The・Scene" className="logo"  />   </a>
+                            </span>
 
                             <div className="mdl-layout-spacer"></div>
 
                             <nav className="mdl-navigation mdl-layout--large-screen-only">
+
                                 <a className="mdl-navigation__link" href="">
-                                Log In
+                                    Log In
                                 </a>
+                            
                                 <a className="mdl-navigation__link" href="">About</a>
+                                
                             </nav>
+
                         </div>
                     </header>
 

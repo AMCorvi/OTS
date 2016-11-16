@@ -68,7 +68,7 @@ class App extends Component {
                     <div className="placesComponent">
                     
                         <Places venues={this.state.venues} />
-                         <Places venues={this.state.venues} /> <Places venues={this.state.venues} /> <Places venues={this.state.venues} /> <Places venues={this.state.venues} /> <Places venues={this.state.venues} /> <Places venues={this.state.venues} /> <Places venues={this.state.venues} />
+                        <Places venues={this.state.venues} /> 
 
                     </div>
                     
