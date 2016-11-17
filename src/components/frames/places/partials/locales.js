@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Component Styles
-import './styles/locales.sass'
+import '../../../styles/locales.sass'
 
 
 
@@ -12,7 +12,7 @@ import './styles/locales.sass'
 
          return (
              
-              <div className="demo-card-wide mdl-card mdl-shadow--2dp">
+              <div className="demo-card-wide mdl-card mdl-shadow--16dp">
 
                 <div className="mdl-card__title">
                     <h2 className="mdl-card__title-text">Welcome</h2>

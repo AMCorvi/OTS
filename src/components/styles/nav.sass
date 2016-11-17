@@ -4,6 +4,10 @@
 //Component Styles
 .mdl-layout__header
     background-color: $base-prime
+     
+    .mdl-navigation__link
+        .headerLink
+            text-decoration: none
 
 
 .mdl-layout__drawer
@@ -23,9 +27,16 @@
 
     .mdl-navigation        
         .mdl-navigation__link
-            text-decoration: none
-            color: white
-            font-size: 1.2rem
+            color: $action-wait
+
+            
             &:hover
-                color: lighten($action-info,15%)
+                color: lighten($action-info,0%)
                 text-shadow: 5px 8px 5px $action-info
+            .headerLink
+                text-decoration: none
+                color: lighten($action-info,0%)
+                font-size: 1.2rem
+
+            &:hover
+                color: $action-go

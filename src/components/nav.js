@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-
+import {Link} from 'react-router'
 
 //Component styles
 import './styles/nav.sass'
@@ -20,7 +20,9 @@ export default class Nav extends Component {
                         <div className="mdl-layout__header-row">
 
                             <span className="mdl-layout-title">
-                                <a href=""> <img src={logo} alt="On・The・Scene" className="logo"  />   </a>
+                                <a href="">
+                                    <img src={logo} alt="On・The・Scene" className="logo"/>
+                                </a>
                             </span>
 
                             <div className="mdl-layout-spacer"></div>
@@ -28,11 +30,19 @@ export default class Nav extends Component {
                             <nav className="mdl-navigation mdl-layout--large-screen-only">
 
                                 <a className="mdl-navigation__link" href="">
-                                    Log In
+                                    <Link className="headerLink" to="/">
+                                        Log-In
+                                    </Link>
                                 </a>
-                            
-                                <a className="mdl-navigation__link" href="">About</a>
-                                
+
+                                <a className="mdl-navigation__link">
+
+                                    <Link className="headerLink" to="/about">
+
+                                        About
+                                    </Link>
+                                </a>
+
                             </nav>
 
                         </div>
@@ -41,8 +51,17 @@ export default class Nav extends Component {
                     <div className="mdl-layout__drawer mdl-layout--small-screen-only">
                         <span className="mdl-layout-title">Where Ya Goin!?</span>
                         <nav className="mdl-navigation">
-                            <a className="mdl-navigation__link" href="">Log-In</a>
-                            <a className="mdl-navigation__link" href="">About</a>
+                            <a className="mdl-navigation__link" href="">
+                                <Link className="headerLink" to="/">
+                                    Log-In<i className="material-icons">computer</i>
+                                </Link>
+                            </a>
+                            <a className="mdl-navigation__link" href="">
+                                <Link className="headerLink" to="/about">
+                                    About<i className="material-icons">library-books</i>
+                                </Link>
+                            </a>
+
                         </nav>
                     </div>
 
