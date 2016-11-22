@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 
 //Component Styles
+import '../../styles/about.sass'
 
 
 export default class extends Component { 

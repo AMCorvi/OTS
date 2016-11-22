@@ -30,7 +30,7 @@ export default class Nav extends Component {
                             <nav className="mdl-navigation mdl-layout--large-screen-only">
 
                                 <a className="mdl-navigation__link" href="">
-                                    <Link className="headerLink" to="/">
+                                    <Link className="headerLink" to="/login">
                                         Log-In
                                     </Link>
                                 </a>

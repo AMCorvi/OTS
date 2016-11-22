@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import superagent from 'superagent'
 
+import Footer from './components/footer'
+import Frames from './components/frames'
 import Map from './components/map'
 import Nav from './components/nav'
-import Frames from './components/frames'
 
 import './components/styles/layout.sass'
 
@@ -64,14 +65,14 @@ export default class Layout extends Component {
                     </div>
 
 
-                    <div className="framesComponent">
+                    <div className="framesContainer">
                     
                         <Frames>{this.props.children}</Frames>
 
                     </div>
                     
                 </main>
-
+                <Footer/>
             </div>
 
         )

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 // Components
-import Locale from './partials/locales.js'
+import Locale from './partials/locale.js'
 
 //Styles
 import '../../styles/places.sass'
@@ -21,10 +21,21 @@ class Places extends Component {
         }
         
         return (
-            <div className='localeContainer'>
+            <div className='placesContainer'>
+
+                    <h1 className="placesTitle">
+                        Here is the scene!
+                    </h1>
 
                      <Locale/>
-                      <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/> <Locale/>
+                     <Locale/>
+                     <Locale/>
+                     <Locale/>
+                     <Locale/>
+                     <Locale/>
+                     <Locale/>
+                     
+                     
             </div>
 
         )

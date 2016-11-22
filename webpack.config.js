@@ -1,9 +1,10 @@
 var webpack = require("webpack");
 var path = require("path");
+var autoprefixer = require('autoprefixer')
 
 module.exports = {
     entry: {
-        app: "./src/app.js"
+        app: "./src/client.js"
     },
     output: {
         path: 'build',
@@ -32,8 +33,10 @@ module.exports = {
             },
             {
                 test: /\.sass$/,
-                loader: 'style-loader!css-loader!sass-loader'
+                loader: 'style-loader!css-loader!postcss-loader!sass-loader'
             }
         ]
-    }
+    },
+     postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
+
 };

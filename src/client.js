@@ -5,8 +5,9 @@ import {Router, Route, IndexRoute, hashHistory} from 'react-router'
 //Components
 import Layout from './layout'
 
-import Frames from './components/frames'
 import About from './components/frames/about/about'
+import Frames from './components/frames'
+import Login from   './components/frames/login/login'
 import Places from './components/frames/places/places'
 
 const app = document.getElementById('app')
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Route path="/" component={Layout}>
         <IndexRoute component={Places}/> 
          <Route path="/about" component={About}/>
+         <Route path="/login" component={Login}/>
     </Route>
 </Router>
 

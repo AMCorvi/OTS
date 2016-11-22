@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom'
 //Components
 import Places from './frames/places/places'
 import About from './frames/about/about'
+import Login from './frames/login/login'
 
 //Component Styles
 import './styles/frames.sass'
