@@ -9,7 +9,7 @@ module.exports = {
     output: {
         path: 'build',
         filename: "bundle.js",
-        sourceMapFilename: "./build/bundle.js.map"
+        sourceMapFilename: "bundle.js.map"
     },
     devServer: {
         inline: true,
