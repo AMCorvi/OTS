@@ -15,33 +15,33 @@ export default class Nav extends Component {
 
             <div >
 
-                <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header" />
                     <header className="mdl-layout__header">
                         <div className="mdl-layout__header-row">
 
                             <span className="mdl-layout-title">
-                                <a href="">
+                                <Link to="/">
                                     <img src={logo} alt="On・The・Scene" className="logo"/>
-                                </a>
+                                </Link>
                             </span>
 
                             <div className="mdl-layout-spacer"></div>
 
                             <nav className="mdl-navigation mdl-layout--large-screen-only">
 
-                                <a className="mdl-navigation__link" href="">
+                                <span className="mdl-navigation__link" href="">
                                     <Link className="headerLink" to="/login">
                                         Log-In
                                     </Link>
-                                </a>
+                                </span>
 
-                                <a className="mdl-navigation__link">
+                                <span className="mdl-navigation__link">
 
                                     <Link className="headerLink" to="/about">
 
                                         About
                                     </Link>
-                                </a>
+                                </span>
 
                             </nav>
 
@@ -51,21 +51,21 @@ export default class Nav extends Component {
                     <div className="mdl-layout__drawer mdl-layout--small-screen-only">
                         <span className="mdl-layout-title">Where Ya Goin!?</span>
                         <nav className="mdl-navigation">
-                            <a className="mdl-navigation__link" href="">
+                            <span className="mdl-navigation__link" href="">
                                 <Link className="headerLink" to="/">
                                     Log-In<i className="material-icons">computer</i>
                                 </Link>
-                            </a>
-                            <a className="mdl-navigation__link" href="">
+                            </span>
+                            <span className="mdl-navigation__link" href="">
                                 <Link className="headerLink" to="/about">
                                     About<i className="material-icons">library-books</i>
                                 </Link>
-                            </a>
+                            </span>
 
                         </nav>
                     </div>
 
-                </div>
+
 
             </div>
 

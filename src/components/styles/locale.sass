@@ -1,21 +1,29 @@
 @import './variables/_variables.sass'
 
 
+.mdl-button--mini-fab
+    background: 
+        color: $accent-dark
+    .material-icons
+        color: $action-info
 
-
-.mdl-card 
-    color: white
-    width: 90%
-    height: 25%
-    background-color: white
-    margin: 0 0 0 0
-    margin-top: 30px
-    border-radius: 10px
-
+.localeComponent
+    padding: 0
     &:nth-child(1)
         margin-top: 20px
     &:nth-last-child(1)
         margin-bottom: 30px
+    display: flex
+    justify-content: space-around
+
+.mdl-card
+    color: white
+    width: 90%
+    height: auto
+    background-color: white
+    margin-top: 30px
+    border-radius: 10px
+
     @media (max-width: 800px)
         width: 90%
         margin-top: 20px
@@ -24,12 +32,11 @@
 
 
 .mdl-card__title
-    color: white 
-    height: 176px 
-    background: url('./images/photo-1430213670473-21aeffa76133.jpg') center / cover 
+    color: white
+    height: 176px
+    background: url('http://lorempixel.com/500/500/city') center / cover
 
-.mdl-card__menu 
+.mdl-card__menu
     i
         color: black
 
-    

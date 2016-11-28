@@ -21,7 +21,7 @@ class Places extends Component {
         }
         
         return (
-            <div className='placesContainer'>
+            <div className='placesComponent'>
 
                     <h1 className="placesTitle">
                         Here is the scene!
