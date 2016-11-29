@@ -1,5 +1,13 @@
+
+*Master*
 √ Create: Function that changes state of value on input feilds (Login.js)
 √ Correct CSS: Center Locale Cards
 √ Change Link embended in nav 
 √ Change logo anchor tag to <Link/> to prevent reloading of the page
 √ Change: Share button to Chip with number (that will be incremented)
+
+*Redux*
+√ Create Store
+√ Create Action
+- Create Reducer
+- Intergrate Store With React Router
