@@ -5,6 +5,7 @@ export function increment(index){
         index
     }
 }
+
 //add comment
 export function addComment(postID, author, comment){
     return{ 

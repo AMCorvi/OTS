@@ -9,5 +9,6 @@
 *Redux*
 √ Create Store
 √ Create Action
-- Create Reducer
+√ Create: Stand-in data
+√ Create: Sub-Reducers and root Reducer
 - Intergrate Store With React Router
