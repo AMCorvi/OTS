@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 
 //Component styles
-import './styles/nav.sass'
+import '../../styles/nav.sass'
 
 //images
-import logo from './styles/images/photo-1430213670473-21aeffa76133.png'
+import logo from '../../styles/images/photo-1430213670473-21aeffa76133.png'
 
 export default class Nav extends Component {
 

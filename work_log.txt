@@ -6,9 +6,25 @@
 √ Change logo anchor tag to <Link/> to prevent reloading of the page
 √ Change: Share button to Chip with number (that will be incremented)
 
+- Change: Complete layout for footer section
+- Correct: User Login
+- Complete About Page
+- Create: CTA for user login to comment
+
 *Redux*
 √ Create Store
 √ Create Action
 √ Create: Stand-in data
 √ Create: Sub-Reducers and root Reducer
-- Intergrate Store With React Router
+
+√ Intergrate Store With React Router 
+- Create: Scene Layout for page(specific to locations)
+- Create: async request middleware for Redux
+
+*Backend*
+
+
+- Create: User database
+- Create: Favoriting of location specific to user logged-in
+- Create: Database for locations & comments
+- Create: Comments Should Only Be Enable during user login

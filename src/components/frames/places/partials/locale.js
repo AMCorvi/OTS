@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router'
 
 // Component Styles
 import '../../../styles/locale.sass'
@@ -7,13 +8,15 @@ export default class Locale extends Component {
 
     render() {
 
+        const location = this.props.location;
+        const comments = this.props.SceneComments
         return (
 
             <div className="localeComponent">
                 <div className="demo-card-wide mdl-card mdl-shadow--16dp">
 
                     <div className="mdl-card__title">
-                        <h2 className="mdl-card__title-text">Welcome</h2>
+                        <h2 className="mdl-card__title-text"></h2>
                     </div>
 
                     <div className="mdl-card__supporting-text">
@@ -24,7 +27,7 @@ export default class Locale extends Component {
                     <div className="mdl-card__actions mdl-card--border">
                         <a
                             className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            Get Started
+                            <Link to='/scene' location={location} comments={comments}> </Link>
                         </a>
                     </div>
 

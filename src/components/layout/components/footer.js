@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './styles/footer.sass'
+import '../../styles/footer.sass'
 
 export default class extends React.Component {
 

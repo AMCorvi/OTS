@@ -5,14 +5,15 @@ import {Provider} from 'react-redux'
 import store, {history} from './store/store'
 
 //Components
-import Main from './main'
-import Layout from './layout'
+import App from './reactApp.js'
+import Layout from './components/layout/layout'
 
 
 import About from './components/frames/about/about'
-import Frames from './components/frames'
+import Frames from './components/layout/components/frames.js'
 import Login from './components/frames/login/login'
 import Places from './components/frames/places/places'
+import Scene from './components/frames/scene/scene'
 
 const app = document.getElementById('app')
 
@@ -21,10 +22,11 @@ ReactDOM.render(
 
     <Router history={history}>
 
-        <Route path="/" component={Main}>
+        <Route path="/" component={App}>
             <IndexRoute component={Places}/>
             <Route path="/about" component={About}/>
             <Route path="/login" component={Login}/>
+            <Route path="/scene" component={Scene}/>
         </Route>
 
     </Router>

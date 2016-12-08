@@ -1,4 +1,4 @@
-export const comments = {
+const comments = {
     '583db516fc13ae2b63001554': [
         {
             user: 'bkim0',
@@ -369,3 +369,5 @@ export const comments = {
         }
     ]
 }
+
+module.exports = comments

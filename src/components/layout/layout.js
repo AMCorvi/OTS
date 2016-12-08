@@ -4,9 +4,9 @@ import superagent from 'superagent'
 import Footer from './components/footer'
 import Frames from './components/frames'
 import Map from './components/map'
-import Nav from './components/nav'
+import Nav from './components/nav.js'
 
-import './components/styles/layout.sass'
+import '../styles/layout.sass'
 
 
 export default class Layout extends Component {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as actionCreators from './actions/actionCreator'
 
 
-import Layout from './layout'
+import Layout from './components/layout/layout'
 
 
 function mapStateToProps(state){
