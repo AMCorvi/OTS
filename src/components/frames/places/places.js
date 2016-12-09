@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
 // Components
-import Locale from './partials/locale.js'
+import Locale from '../../partials/locale.js'
 
 //Styles
 import '../../styles/places.sass'
@@ -11,11 +11,7 @@ class Places extends Component {
     render() {
 
         const listOfLocales = this.props.locations.map(
-            (location, index) => {
-                        return <Locale location={location} key={index} i={index}/> 
-        })
-
-
+            (location, index) => {    return <Locale location={location} key={index} i={index}/>    })
 
         return (
             <div className='placesComponent'>
@@ -25,7 +21,7 @@ class Places extends Component {
                 </h1>
 
                 {listOfLocales}
-               
+
             </div>
 
         )

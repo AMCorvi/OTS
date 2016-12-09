@@ -17,6 +17,7 @@ import Scene from './components/frames/scene/scene'
 
 const app = document.getElementById('app')
 
+
 ReactDOM.render(
 <Provider store={store} >
 
@@ -26,7 +27,7 @@ ReactDOM.render(
             <IndexRoute component={Places}/>
             <Route path="/about" component={About}/>
             <Route path="/login" component={Login}/>
-            <Route path="/scene" component={Scene}/>
+            <Route path="/scene/:sceneID/:photoID" component={Scene}/>
         </Route>
 
     </Router>

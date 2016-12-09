@@ -16,9 +16,9 @@
 √ Create Action
 √ Create: Stand-in data
 √ Create: Sub-Reducers and root Reducer
+√ Integrate Store With React Router 
 
-√ Intergrate Store With React Router 
-- Create: Scene Layout for page(specific to locations)
+√ Create: Scene Layout for page.(specific to locations) 
 - Create: async request middleware for Redux
 
 *Backend*

@@ -15,57 +15,55 @@ export default class Nav extends Component {
 
             <div >
 
-                <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header" />
-                    <header className="mdl-layout__header">
-                        <div className="mdl-layout__header-row">
+                <div className="mdl-layout mdl-js-layout mdl-layout--scroll"/>
+                <header className="mdl-layout__header">
+                    <div className="mdl-layout__header-row">
 
+                        <Link to="/">
                             <span className="mdl-layout-title">
-                                <Link to="/">
-                                    <img src={logo} alt="On・The・Scene" className="logo"/>
-                                </Link>
+                        
+                                <img src={logo} alt="On・The・Scene" className="logo"/>
                             </span>
+                        </Link>
 
-                            <div className="mdl-layout-spacer"></div>
+                        <div className="mdl-layout-spacer"></div>
 
-                            <nav className="mdl-navigation mdl-layout--large-screen-only">
-
-                                <span className="mdl-navigation__link" href="">
-                                    <Link className="headerLink" to="/login">
-                                        Log-In
-                                    </Link>
-                                </span>
-
-                                <span className="mdl-navigation__link">
-
-                                    <Link className="headerLink" to="/about">
-
-                                        About
-                                    </Link>
-                                </span>
-
-                            </nav>
-
-                        </div>
-                    </header>
-
-                    <div className="mdl-layout__drawer mdl-layout--small-screen-only">
-                        <span className="mdl-layout-title">Where Ya Goin!?</span>
                         <nav className="mdl-navigation">
-                            <span className="mdl-navigation__link" href="">
-                                <Link className="headerLink" to="/">
-                                    Log-In<i className="material-icons">computer</i>
-                                </Link>
-                            </span>
-                            <span className="mdl-navigation__link" href="">
-                                <Link className="headerLink" to="/about">
-                                    About<i className="material-icons">library-books</i>
-                                </Link>
-                            </span>
+
+                            <Link className="headerLink" to="/login">
+                                <span className="mdl-navigation__link" href="">
+                                    Log-In
+                                </span>
+                            </Link>
+
+                            <Link className="headerLink" to="/about">
+                                <span className="mdl-navigation__link">
+                                    About
+                                </span>
+                            </Link>
 
                         </nav>
+
                     </div>
+                </header>
 
+                <div className="mdl-layout__drawer ">
+                
+                    <span className="mdl-layout-title">Where Ya Goin!?</span>
+                    <nav className="mdl-navigation">
+                        <Link className="headerLink" to="/">
+                            <span className="mdl-navigation__link" href="">
+                                Log-In<i className="material-icons">computer</i>
+                            </span>
+                        </Link>
+                        <Link className="headerLink" to="/about">
+                            <span className="mdl-navigation__link" href="">
+                                About<i className="material-icons">library-books</i>
+                            </span>
+                        </Link>
 
+                    </nav>
+                </div>
 
             </div>
 
