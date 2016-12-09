@@ -5,6 +5,7 @@
 √ Change Link embended in nav 
 √ Change logo anchor tag to <Link/> to prevent reloading of the page
 √ Change: Share button to Chip with number (that will be incremented)
+√ Correct: Disappearing Nav header on resizing
 
 - Change: Complete layout for footer section
 - Correct: User Login
@@ -17,8 +18,11 @@
 √ Create: Stand-in data
 √ Create: Sub-Reducers and root Reducer
 √ Integrate Store With React Router 
+√ Created: Scene Component Layout
+    √ React router edited to receive params for Scene Component
+    √ Comments instantiated for Scene Component
+    √ Layout styles corrected [children of Frame component now expand to full with of container]
 
-√ Create: Scene Layout for page.(specific to locations) 
 - Create: async request middleware for Redux
 
 *Backend*
