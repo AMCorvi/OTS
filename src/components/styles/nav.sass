@@ -1,6 +1,12 @@
 //Imports
 @import './variables/_variables.sass'
 
+//Removes non-visible container blocking selection of certain content (a.k.a bug a.k.a pain in rear for more then a day a.k.a feel a lil silly now 😅)
+.mdl-layout__container
+    height: auto
+    width: 100%
+
+
 //Component Styles
 .mdl-layout__header
     background-color: $base-prime

@@ -28,9 +28,9 @@ export default class extends Component {
             </li>
         )
 });
-
+ 
         return(
-                <div className="commetnsComponent">
+                <div className="commentsComponent">
                     
                     <ul className="sceneComments mdl-list">
                         {sceneComments}
